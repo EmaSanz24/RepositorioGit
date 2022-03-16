@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Vollkorn:wght@540&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+     <link rel="stylesheet" href="../css/style.css">
+
+     <title>Contact - Kazumi Restaurant</title>
+</head>
+<body>
+     <header>
+          <img id="banner" src="../media/images/ptb_image.jpg" alt="banner">
+          <img class="logo" src="../media/images/kazumi_logo.png" alt="Logo">
+          <nav>
+               <ul class="menu">
+                    <li><a href="../index.html">HOME</a></li>
+                    <li><a href="./about-us.html">ABOUT US</a></li>
+                    <li><a href="./contact.html">CONTACT</a></li>
+                    <li><a href="./gallery.html">GALLERY</a></li>
+                    <li><a href="./our-menu.html">OUR MENU</a></li>
+               </ul>
+          </nav>
+     </header>
+     <main class="contact">
+          <fieldset><!--Formulario-->
+               <legend>Form</legend>
+               <form action="">
+                    <div>
+                         <label for="name">Enter your full name</label>
+                         <input type="text" name="name" placeholder="Jhon" required>
+                    </div><br>
+                    <div>
+                         <label for="lastname">Enter your last name</label>
+                         <input type="text" name="lastname" placeholder="Smith" required>
+                    </div><br>
+                    <div>
+                         <label for="age">Enter your age</label>
+                         <input type="number" name="age" placeholder="18">
+                    </div><br>
+                    <div>
+                         <label for="password">Enter your password</label>
+                         <input type="password" name="password" required>
+                    </div><br>
+                    <div>
+                         <label for="passwordc">Confirm password</label>
+                         <input type="password" name="passwordc" required>
+                    </div><br>
+                    <div>
+                         <label for="email">Enter your e-mail</label>
+                         <input type="email" name="email" required placeholder="example@hotmail.com">
+                    </div><br>
+                    <div>
+                         <label for="review">Let us know what you think </label><br>
+                         <textarea name="review" id="" cols="50" rows="10" placeholder="Insert your comment here"></textarea>
+                    </div><br>
+                    <div>
+                         <input type="submit" value="submit">
+                    </div>
+               </form>
+          </fieldset>
+     </main>
+     <footer>
+          <a href="#banner"><span>⬆ Top of the page </span></a>
+          
+          <span>Page created & designed by TS team &rarr; &copy; All rights reserved</span>
+     </footer>
+     <script src="../js/wow.min.js"></script>
+     <script>
+           new WOW().init();
+     </script>
+</body>
+</html>

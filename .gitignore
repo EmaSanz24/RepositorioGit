@@ -1,0 +1,6 @@
+#ignorar carpeta media
+/media
+#ignorar style_old
+style_old.css
+#ignorar wow js
+/js

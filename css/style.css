@@ -1,0 +1,570 @@
+@media only screen and (max-width: 425px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  /* Mobile View max width 425*/
+  body {
+    background-color: #313539;
+    font-family: "Vollkorn", serif;
+    font-size: 15px;
+    line-height: 1.75;
+  }
+  /* Index Mobile*/
+  h1 {
+    color: whitesmoke;
+    text-transform: uppercase;
+    font-size: 40px;
+  }
+  h2 {
+    color: #c0996b;
+    text-transform: uppercase;
+    font-size: 15px;
+  }
+  p {
+    color: #afafaf;
+    margin-top: 2rem;
+  }
+  header {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 120px 220px 220px;
+    grid-template-areas:
+      "logo"
+      "nav"
+      "banner";
+    gap: 0px;
+  }
+  .logo {
+    grid-area: logo;
+    max-height: 86px;
+    margin-top: 17px;
+    margin-left: 25px;
+  }
+  .menu {
+    grid-area: nav;
+  }
+  #banner {
+    grid-area: banner;
+    width: 100vw;
+    max-height: 220px;
+    filter: brightness(0.5);
+  }
+  nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    background-color: #252525;
+    text-align: center;
+  }
+  nav ul a {
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  nav ul a:hover {
+    color: #c0996b;
+  }
+  main {
+    max-width: 100%;
+    padding: 7%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, auto);
+    grid-template-areas:
+      "tittle"
+      "subtittle"
+      "pics"
+      "txt"
+      "button"
+      "buda";
+    gap: 0px;
+  }
+  .tittle {
+    grid-area: tittle;
+    width: 90%;
+  }
+  .subtittle {
+    grid-area: subtittle;
+    width: 90%;
+    margin-bottom: 1rem;
+  }
+  .pics {
+    grid-area: pics;
+    display: flex;
+    flex-direction: column;
+  }
+  picture img {
+    width: 70%;
+    padding: 0px;
+  }
+  .txt {
+    grid-area: txt;
+    width: 90%;
+  }
+  section p {
+    padding-right: 6%;
+  }
+  .button {
+    padding-top: 2rem;
+  }
+  .button a {
+    font-size: 28px;
+    text-decoration: none;
+    color: whitesmoke;
+    border: 2px solid #afafaf;
+    padding: 10px 30px 10px 30px;
+  }
+  .button a:hover {
+    color: #c0996b;
+    border: 2px solid #afafaf;
+  }
+  .info {
+    font-size: 28px;
+    color: whitesmoke;
+    filter: brightness(1) contrast(1);
+    justify-self: center;
+    padding: 5rem;
+  }
+  .buda {
+    grid-area: buda;
+    max-width: 100%;
+    margin-top: 2rem;
+  }
+  .extra {
+    background-image: url(..//media/images/reservation.jpg);
+    background-position: center;
+    filter: saturate(0.3) brightness(0.9) contrast(0.3) opacity(1);
+  }
+  footer {
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    padding-left: 3rem;
+    color: #afafaf;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  footer a {
+    color: #afafaf;
+    font-size: 17px;
+    text-decoration: none;
+  }
+  footer a:hover {
+    color: #c0996b;
+  }
+  /* About Us Mobile*/
+  .ab-us {
+    grid-area: banner;
+    background-image: url(../media/images/about-1.jpg);
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .ab-us h2 {
+    color: whitesmoke;
+    padding: 2rem;
+  }
+  .about-us {
+    padding: 0px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas:
+      "ab2"
+      "p1"
+      "ab3"
+      "p2";
+    gap: 0px;
+  }
+  .ab2 {
+    grid-area: ab2;
+  }
+  .ab2 img {
+    width: 100%;
+  }
+  .ab3 {
+    grid-area: ab3;
+  }
+  .ab3 img {
+    padding-top: 2rem;
+    width: 100%;
+  }
+  .p1 {
+    grid-area: p1;
+    padding: 5% 10% 0% 10%;
+  }
+  .p1 h2 {
+    color: whitesmoke;
+    text-transform: uppercase;
+    font-size: 30px;
+  }
+  .p1 h3 {
+    color: #c0996b;
+    text-transform: uppercase;
+    font-size: 15px;
+  }
+  .p2 {
+    grid-area: p2;
+    padding: 5% 10% 0% 10%;
+  }
+  .p2 h2 {
+    color: whitesmoke;
+    text-transform: uppercase;
+    font-size: 30px;
+  }
+  .p2 h3 {
+    color: #c0996b;
+    text-transform: uppercase;
+    font-size: 15px;
+  }
+  /* Contact Mobile*/
+  .contact {
+    padding: 0px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas:
+      "logo"
+      "nav";
+    gap: 0px;
+  }
+  label {
+    color: #afafaf;
+    margin-top: 2rem;
+  }
+  legend {
+    color: whitesmoke;
+    text-transform: uppercase;
+    font-size: 20px;
+  }
+  textarea {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .contact {
+    max-width: 100%;
+    padding: 10px;
+  }
+  /* Gallery  Mobile*/
+  main img {
+    width: 100%;
+    padding-bottom: 10px;
+  }
+  .gallery img:hover {
+    transform: scale(1.08);
+    border: #afafaf solid 3px;
+    padding: 0px;
+    margin: 10px;
+  }
+  /* Our Menu Mobile */
+  .our-menu {
+    grid-area: banner;
+    background-image: url(../media/images/menu-kazumi.jpg);
+    background-position: center;
+    background-size: 135%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .our-menu h2 {
+    color: whitesmoke;
+    padding: 2rem;
+  }
+}
+/*---------- Vista Tablet-------------*/
+@media only screen and (min-width: 426px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    background-color: #313539;
+    font-family: "Vollkorn", serif;
+    font-size: 15px;
+    line-height: 1.75;
+  }
+  /* Index Tablet */
+  h1 {
+    color: whitesmoke;
+    text-transform: uppercase;
+    font-size: 40px;
+  }
+  h2 {
+    color: #c0996b;
+    text-transform: uppercase;
+    font-size: 15px;
+  }
+  p {
+    color: #afafaf;
+    margin-top: 2rem;
+  }
+  header {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas:
+      "logo"
+      "nav"
+      "banner";
+    gap: 0px;
+  }
+  .logo {
+    grid-area: logo;
+    max-height: 86px;
+    margin-top: 17px;
+    margin-left: 25px;
+  }
+  .menu {
+    grid-area: nav;
+  }
+  #banner {
+    grid-area: banner;
+    width: 100%;
+    max-height: 400px;
+    filter: brightness(0.5);
+  }
+  nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    background-color: #252525;
+    text-align: center;
+    padding: 1rem;
+  }
+  ul {
+    list-style-type: none;
+  }
+  nav ul a {
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  nav ul a:hover {
+    color: #c0996b;
+  }
+  main {
+    max-width: 100%;
+    padding: 7%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(6, auto);
+    grid-template-areas:
+      "tittle tittle"
+      "subtittle subtittle"
+      "pics pics"
+      "txt txt"
+      "button button"
+      "buda buda";
+    gap: 0px;
+  }
+  .tittle {
+    grid-area: tittle;
+    width: 90vw;
+  }
+  .subtittle {
+    grid-area: subtittle;
+    width: 90%;
+    margin-bottom: 1rem;
+  }
+  .pics {
+    grid-area: pics;
+    display: flex;
+    flex-direction: row;
+  }
+  picture img {
+    width: 35%;
+    padding: 10px;
+  }
+  .txt {
+    grid-area: txt;
+    width: 90%;
+  }
+  section p {
+    padding-right: 6%;
+  }
+  .button {
+    padding-top: 2rem;
+  }
+  .button a {
+    font-size: 28px;
+    text-decoration: none;
+    color: whitesmoke;
+    border: 2px solid #afafaf;
+    padding: 10px 30px 10px 30px;
+  }
+  .button a:hover {
+    color: #c0996b;
+    border: 2px solid #afafaf;
+  }
+  .info {
+    font-size: 28px;
+    color: whitesmoke;
+    filter: brightness(1) contrast(1);
+    justify-self: center;
+    padding: 5rem;
+  }
+  .buda {
+    grid-area: buda;
+    max-width: 100%;
+    margin-top: 2rem;
+  }
+  .extra {
+    background-image: url(..//media/images/reservation.jpg);
+    background-position: center;
+    filter: saturate(0.3) brightness(0.9) contrast(0.3) opacity(1);
+  }
+  footer {
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    padding-left: 3rem;
+    color: #afafaf;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+  }
+  footer a {
+    color: #afafaf;
+    font-size: 17px;
+    text-decoration: none;
+  }
+  footer a:hover {
+    color: #c0996b;
+  }
+  /* About Us Tablet */
+  .ab-us {
+    grid-area: banner;
+    background-image: url(../media/images/about-1.jpg);
+    background-position: center;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .ab-us h2 {
+    color: whitesmoke;
+    padding: 2rem;
+    font-size: 20px;
+  }
+  .about-us {
+    padding: 0px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas:
+      "ab2"
+      "p1"
+      "ab3"
+      "p2";
+    gap: 0px;
+  }
+  .ab2 {
+    grid-area: ab2;
+  }
+  .ab2 img {
+    padding: 0%;
+    width: 100%;
+  }
+  .ab3 {
+    grid-area: ab3;
+  }
+  .ab3 img {
+    padding: 0%;
+    padding-top: 2rem;
+    width: 100%;
+  }
+  .p1 {
+    grid-area: p1;
+    padding: 5% 5% 0% 5%;
+  }
+  .p1 h2 {
+    color: whitesmoke;
+    text-transform: uppercase;
+    font-size: 30px;
+  }
+  .p1 h3 {
+    color: #c0996b;
+    text-transform: uppercase;
+    font-size: 15px;
+  }
+  .p2 {
+    grid-area: p2;
+    padding: 5% 5% 0% 5%;
+  }
+  .p2 h2 {
+    color: whitesmoke;
+    text-transform: uppercase;
+    font-size: 30px;
+  }
+  .p2 h3 {
+    color: #c0996b;
+    text-transform: uppercase;
+    font-size: 15px;
+  }
+  /* Contact Tablet */
+  .contact {
+    padding: 0px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas:
+      "logo"
+      "nav";
+    gap: 0px;
+  }
+  label {
+    color: #afafaf;
+    margin-top: 2rem;
+  }
+  legend {
+    color: whitesmoke;
+    text-transform: uppercase;
+    font-size: 20px;
+  }
+  textarea {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .contact {
+    max-width: 50vw;
+    padding: 1rem 8rem 2rem 8rem;
+  }
+  /* Gallery Tablet */
+  main img {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+  }
+  .gallery img:hover {
+    transform: scale(1.08);
+    border: #afafaf solid 3px;
+    padding: 0px;
+    margin: 10px;
+  }
+  /* Our Menu Tablet */
+  .our-menu {
+    grid-area: banner;
+    background-image: url(../media/images/menu-kazumi.jpg);
+    background-position: center;
+    background-size: 135%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .our-menu h2 {
+    color: whitesmoke;
+    padding: 2rem;
+  }
+}
+/*---------- Vista Desktop ----------*/
+@media only screen and (min-width: 1024px) {
+}
